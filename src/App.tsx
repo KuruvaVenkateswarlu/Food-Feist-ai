@@ -12,6 +12,7 @@ import Report from "./pages/Report";
 import NotFound from "./pages/NotFound";
 import Cart from "./pages/Cart";
 import { CartProvider } from "@/hooks/use-cart";
+import SocialFloat from "@/components/SocialFloat";
 
 const queryClient = new QueryClient();
 
@@ -19,6 +20,7 @@ const App = () => (
   <QueryClientProvider client={queryClient}>
     <CartProvider>
       <TooltipProvider>
+        <SocialFloat />
         <Toaster />
         <Sonner />
         <BrowserRouter>
