@@ -54,14 +54,7 @@ const Navbar = () => {
             >
               Contact
             </Link>
-            <Link
-              to="/chat"
-              className={`text-sm font-medium transition-colors hover:text-primary ${
-                isActive("/chat") ? "text-primary" : "text-foreground"
-              }`}
-            >
-              Chat
-            </Link>
+            
             <Link
               to="/report"
               className={`text-sm font-medium transition-colors hover:text-primary ${
@@ -143,15 +136,7 @@ const Navbar = () => {
             >
               Contact
             </Link>
-            <Link
-              to="/chat"
-              onClick={() => setIsMenuOpen(false)}
-              className={`block px-4 py-2 rounded-lg transition-colors ${
-                isActive("/chat") ? "bg-primary text-primary-foreground" : "hover:bg-secondary"
-              }`}
-            >
-              Chat
-            </Link>
+            
             <Link
               to="/report"
               onClick={() => setIsMenuOpen(false)}

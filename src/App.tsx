@@ -8,7 +8,6 @@ import Menu from "./pages/Menu";
 import RestaurantMenu from "./pages/RestaurantMenu";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import Chat from "./pages/Chat";
 import Report from "./pages/Report";
 import NotFound from "./pages/NotFound";
 import Cart from "./pages/Cart";
@@ -30,7 +29,6 @@ const App = () => (
             <Route path="/cart" element={<Cart />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/chat" element={<Chat />} />
             <Route path="/report" element={<Report />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
